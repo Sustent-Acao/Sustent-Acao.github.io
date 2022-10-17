@@ -1,0 +1,39 @@
+.toolbar{
+  margin-top: 55px;
+  margin-left: 52px;
+  margin-right: 52px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.logo{
+  margin-top: 10px;
+}
+img{
+  width: 385px;
+  height: 52px;
+}
+.topicos{
+  display: flex;
+  justify-content: flex-end;
+  a{
+    color: white;
+    font-size: 36px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    height:70px;
+    padding-top: 18px;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+  a+a{
+    border-left: none;
+  }
+  a+a+a{
+    border-right: none;
+    border-left: none;
+  }
+}

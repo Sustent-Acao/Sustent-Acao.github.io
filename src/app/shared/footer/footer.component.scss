@@ -1,0 +1,28 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: static;
+    width: 100%;
+    font-family: 'League Spartan', sans-serif;
+    border: 2px solid white;
+    background-color: #00940F;
+}
+.text{
+    color: white;
+    font-size: 23px;
+    height: 80px;
+    padding-top: 15px;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+}
+.text2{
+    color: white;
+    font-size: 25px;
+    padding-top: 15px;
+    justify-content: space-around;
+    display: flex;
+}
