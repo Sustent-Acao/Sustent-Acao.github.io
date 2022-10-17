@@ -1,13 +1,3 @@
 @import './config-scss/variables.scss';
 @import './config-scss/reset.scss';
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
-
-body{
-  background-color: black;
-  background: url('assets/logos/fundoEtec.jpeg');
-  mix-blend-mode: normal;
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
