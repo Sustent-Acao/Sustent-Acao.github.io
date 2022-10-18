@@ -4,6 +4,7 @@
     bottom: 0;
     position: static;
     width: 100%;
+    height: 12rem;
     font-family: 'League Spartan', sans-serif;
     border: 2px solid white;
     background-color: #00940F;
@@ -11,9 +12,7 @@
 .text{
     color: white;
     font-size: 23px;
-    height: 80px;
-    padding-top: 15px;
-    padding-right: 10px;
+    height: 11rem;
     justify-content: center;
     align-items: start;
     display: flex;
@@ -21,7 +20,7 @@
 }
 .text2{
     color: white;
-    font-size: 25px;
+    font-size: 1.3rem;
     padding-top: 15px;
     justify-content: space-around;
     display: flex;

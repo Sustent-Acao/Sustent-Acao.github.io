@@ -5,6 +5,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { SomosComponent } from './somos/somos.component';
 
 
 
@@ -14,6 +15,7 @@ import { SobreComponent } from './sobre/sobre.component';
     FooterComponent,
     HomeComponent,
     SobreComponent,
+    SomosComponent
 
   ],
   imports: [
@@ -24,7 +26,8 @@ import { SobreComponent } from './sobre/sobre.component';
     ToolbarComponent,
     FooterComponent,
     HomeComponent,
-    SobreComponent
+    SobreComponent,
+    SomosComponent
   ]
 })
 export class SharedModule { }
