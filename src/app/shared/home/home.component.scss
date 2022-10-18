@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-
 .texto{
-  margin-top: 200px;
-  margin-left: 200px;
+  width: 90vw;
+
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 13rem;
+  margin-bottom: 9rem;
+
   h1{
-    font-family: 'Inter', sans-serif;
     width: 500px;
     font-size: 90px;
     font-weight: bold;
@@ -13,9 +16,20 @@
     color: white;
   }
   h3{
-    font-family: 'Palanquin', sans-serif;
     padding-top: 15px;
     font-size: 24px;
     color: white
   }
+}
+
+.imagem {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)), url("../../../assets//logos/fundoEtec.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 90vh;
+  z-index: -1;
 }

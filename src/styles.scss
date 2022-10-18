@@ -1,7 +1,60 @@
-@import './config-scss/variables.scss';
-@import './config-scss/reset.scss';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700;800;900&display=swap');
+@each $mt in (
+  1rem,
+  2rem,
+  3rem,
+  4rem,
+  5rem,
+) {
+  .mt-#{$mt} {
+      margin-top: $mt;
+  }
+}
+
+@import "./config-scss/variables.scss";
+@import "./config-scss/reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700;800;900&display=swap");
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@each $weight in (
+  300,
+  400,
+  500,
+  600,
+  700,
+) {
+  .font-weight-#{$weight} {
+      font-weight: $weight;
+  }
+}
+
+
+.section-container {
+  width: 100vw;
+  height: 60vh;
+  background-color: red;
+  padding: 8rem;
+  padding-top: 4rem;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 12px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }

@@ -6,8 +6,11 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { SomosComponent } from './somos/somos.component';
-
-
+import { TitleComponent } from './title/title.component';
+import {FieldsetModule} from 'primeng/fieldset';
+import {SidebarModule} from 'primeng/sidebar';
+import {ButtonModule} from 'primeng/button';
+import {MenuItem, PrimeIcons} from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -15,19 +18,24 @@ import { SomosComponent } from './somos/somos.component';
     FooterComponent,
     HomeComponent,
     SobreComponent,
-    SomosComponent
-
+    SomosComponent,
+    TitleComponent
   ],
   imports: [
     CommonModule,
-    ToolbarModule
+    ToolbarModule,
+    FieldsetModule,
+    SidebarModule,
+    ButtonModule,
+
   ],
   exports: [
     ToolbarComponent,
     FooterComponent,
     HomeComponent,
     SobreComponent,
-    SomosComponent
+    SomosComponent,
+    TitleComponent
   ]
 })
 export class SharedModule { }
