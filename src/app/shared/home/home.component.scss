@@ -9,12 +9,15 @@
 
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
+
+  margin-top: 2vh;
 
   h1 {
     margin-top: 2rem;
     width: 30%;
+    height: auto;
     font-size: 5vw;
     font-weight: bold;
     word-wrap: normal;
@@ -23,15 +26,18 @@
     span {
       background-image: linear-gradient(90deg, rgb(236, 143, 255) 0%, rgb(80, 226, 255) 100%);
       background-clip: text;
+      font-weight: 900;
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent;
     }
   }
 
   h3 {
+    height: auto;
+
     margin-top: 2rem;
     margin-left: 8px;
-    font-size: 1vw;
+    font-size: 1.25vw;
     color: white
   }
 }
@@ -44,7 +50,7 @@
   background-size: cover;
   background-position: bottom;
   background-position: 30% 70%;
-  width: 100vw;
+  width: 100%;
   height: 65vh;
   z-index: -1;
 }

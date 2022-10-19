@@ -30,7 +30,6 @@ import { MenuItem, PrimeIcons } from 'primeng/api';
     FieldsetModule,
     SidebarModule,
     ButtonModule,
-
   ],
   exports: [
     ToolbarComponent,
