@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 import { ToolbarModule } from 'primeng/toolbar';
 
@@ -25,11 +28,13 @@ import { MenuItem, PrimeIcons } from 'primeng/api';
     TitleComponent
   ],
   imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     ToolbarModule,
     FieldsetModule,
     SidebarModule,
-    ButtonModule,
+    ButtonModule
   ],
   exports: [
     ToolbarComponent,

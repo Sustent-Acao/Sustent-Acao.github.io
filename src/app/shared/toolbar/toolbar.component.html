@@ -1,18 +1,24 @@
 <p-toolbar>
-    <div class="logo">
-      <img src="../../../assets/logos/logoProjeto.svg" alt="Logo do Projeto" />
+  <div class="logo">
+    <img src="../../../assets/logos/logoProjeto.svg" alt="Logo do Projeto" />
+  </div>
+  <div class="topicos">
+    <a href="#app-sobre">SOBRE</a>
+    <a href="#app-jogo">JOGO</a>
+    <a href="#app-receitas">RECEITAS</a>
+    <a href="#app-somos">QUEM SOMOS</a>
+    <div class="center">
+      <label (click)="check = true" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
     </div>
-    <div class="topicos">
-      <a href="#app-sobre">SOBRE</a>
-      <a href="#app-jogo">JOGO</a>
-      <a href="#app-receitas">RECEITAS</a>
-      <a href="#app-somos">QUEM SOMOS</a>
-    </div>
-    <!--<div class="hamburguer">
-      <a (click)="visibleSidebar2 = true"><i class="fa-solid fa-bars"></i></a>
-    </div>!-->
+  </div>
 </p-toolbar>
-
-<!--<p-sidebar [(visible)]="visibleSidebar2" position="right" [baseZIndex]="20">
-  <h3>Right Sidebar</h3>
-</p-sidebar>!-->
+<p-sidebar [(visible)]="check" position="right" [baseZIndex]="10000">
+  <div class="conteudoSide">
+    <a href="app-sobre">SOBRE</a>
+    <a href="#app-jogo">JOGO</a>
+    <a href="#app-receitas">RECEITAS</a>
+    <a href="#app-somos">QUEM SOMOS</a>
+  </div>
+</p-sidebar>

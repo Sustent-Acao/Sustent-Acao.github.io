@@ -1,6 +1,6 @@
 :host ::ng-deep p-toolbar {
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
 
   margin-left: auto;
   margin-right: auto;
@@ -31,7 +31,6 @@
 
   width: 95%;
 }
-
 
 .logo {
   margin-top: 0.5rem;
@@ -72,20 +71,55 @@
     border-right: none;
     border-left: none;
   }
-
-  .hamburger {
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkbtn {
+    font-size: 2rem;
+    color: white;
+    line-height: 4rem;
+    margin-right: 2rem;
+    cursor: pointer;
     display: none;
+  }
+  #check {
+    display: none;
+  }
+}
+:host ::ng-deep .p-sidebar {
+  background: black !important;
+  height: 100%;
 
-    .fa-bars {
-      content: none !important;
-    }
+  .conteudoSide{
+    margin-top: 100px;
+  }
+
+  a {
+    color: white;
+    font-size: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 40px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-    cursor: pointer;
+:host {
+  @media (max-width: 858px) {
+    .center {
+      .checkbtn {
+        display: block;
+      }
+    }
+    .topicos {
+      a {
+        display: none;
+      }
+    }
   }
-
 }
