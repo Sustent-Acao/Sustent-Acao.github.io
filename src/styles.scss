@@ -6,8 +6,19 @@
   font-family: "Inter", sans-serif;
 }
 
+a {
+  color: rgb(64, 134, 255);
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
 body {
   margin: 0;
+
   // overflow-x: hidden;
 }
 
@@ -16,77 +27,31 @@ html {
   scroll-behavior: smooth;
 }
 
-.section-container {
-  width: 100%;
-  height: fit-content;
-  background-color: rgb(5, 5, 5);
-  padding: 8rem;
-  padding-top: 4rem;
-  padding-bottom: 6rem;
+li {
+  list-style: inside;
+  color: white;
 }
 
-.generic-section {
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  height: 30%;
-  margin-left: auto;
-  margin-right: auto;
-
-  p {
-    color: white;
-    font-size: 1.2rem;
-    text-align: justify;
-  }
-
-  li {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-
-  .right-half {
-    margin: 1rem;
-    width: 35%;
-    height: 100%;
-    min-height: 100%;
-  }
-
-  .left-half {
-    margin: 1rem;
-    width: 65%;
-    height: 100%;
-    min-height: 100%;
-
-    img {
-      height: 20%;
-      border-radius: 3px;
-    }
-  }
-}
-
-@each $weight in (300,
-  400,
-  500,
-  600,
-  700,
-) {
+@each $weight in (300, 400, 500, 600, 700) {
   .font-weight-#{$weight} {
     font-weight: $weight;
   }
 }
 
-@each $mt in (1rem,
-  2rem,
-  3rem,
-  4rem,
-  5rem,
-) {
+@each $mt in (8px, 1rem, 2rem, 3rem, 4rem, 5rem) {
   .mt-#{$mt} {
     margin-top: $mt;
   }
 }
 
-li {
-  list-style: inside;
-  color: white;
+@each $mb in (8px, 1rem, 2rem, 3rem, 4rem, 5rem) {
+  .mb-#{$mb} {
+    margin-bottom: $mb;
+  }
+}
+
+@each $mr in (8px, 1rem, 2rem, 3rem, 4rem, 5rem) {
+  .mr-#{$mr} {
+    margin-right: $mr;
+  }
 }

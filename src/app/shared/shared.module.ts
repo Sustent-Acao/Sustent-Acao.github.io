@@ -17,6 +17,8 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { MenuItem, PrimeIcons } from 'primeng/api';
+import { JogoComponent } from './jogo/jogo.component';
+import { ReceitasComponent } from './receitas/receitas.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { MenuItem, PrimeIcons } from 'primeng/api';
     HomeComponent,
     SobreComponent,
     SomosComponent,
-    TitleComponent
+    TitleComponent,
+    JogoComponent,
+    ReceitasComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,8 @@ import { MenuItem, PrimeIcons } from 'primeng/api';
     HomeComponent,
     SobreComponent,
     SomosComponent,
-    TitleComponent
+    TitleComponent,
+    JogoComponent
   ]
 })
 export class SharedModule { }

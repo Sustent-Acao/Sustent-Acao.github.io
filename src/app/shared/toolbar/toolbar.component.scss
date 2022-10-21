@@ -111,6 +111,9 @@
 
 :host {
   @media (max-width: 858px) {
+    .logo {
+        scale: .7;
+    }
     .center {
       .checkbtn {
         display: block;
