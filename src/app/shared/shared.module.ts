@@ -5,6 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 import { ToolbarModule } from 'primeng/toolbar';
+import {GalleriaModule} from 'primeng/galleria';
 
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -19,6 +20,7 @@ import { ButtonModule } from 'primeng/button';
 import { MenuItem, PrimeIcons } from 'primeng/api';
 import { JogoComponent } from './jogo/jogo.component';
 import { ReceitasComponent } from './receitas/receitas.component';
+import { PatrocinioComponent } from './patrocinio/patrocinio.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { ReceitasComponent } from './receitas/receitas.component';
     SomosComponent,
     TitleComponent,
     JogoComponent,
-    ReceitasComponent
+    ReceitasComponent,
+    PatrocinioComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { ReceitasComponent } from './receitas/receitas.component';
     ToolbarModule,
     FieldsetModule,
     SidebarModule,
-    ButtonModule
+    ButtonModule,
+    GalleriaModule
   ],
   exports: [
     ToolbarComponent,
@@ -47,7 +51,9 @@ import { ReceitasComponent } from './receitas/receitas.component';
     SobreComponent,
     SomosComponent,
     TitleComponent,
-    JogoComponent
+    JogoComponent,
+    PatrocinioComponent,
+    ReceitasComponent
   ]
 })
 export class SharedModule { }

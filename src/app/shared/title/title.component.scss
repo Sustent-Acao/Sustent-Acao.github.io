@@ -1,20 +1,34 @@
 h1 {
-    color: white;
-    font-size: 10vmin;
+  color: white;
+  font-size: 10vmin;
 }
 
 h2 {
-    color: white;
-    font-size: 3vmin;
+  color: white;
+  font-size: 3vmin;
 }
 
 .title-holder {
-    display: flex;
-    align-items: flex-start;
-    i {
-        font-size: 9vmin;
-        color: white;
-        margin-top: 0.5rem;
-        margin-right: 1rem;
-    }
+  display: flex;
+  align-items: flex-start;
+  i {
+    font-size: 9vmin;
+    color: white;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
 }
+
+@media only screen and (max-width: 850px) {
+  .title-holder {
+    margin: auto;
+    width: 100%;
+  }
+  .title-container {
+    width: 100%;
+  }
+  h1, h2 {
+    width: 100%;
+  }
+}
+

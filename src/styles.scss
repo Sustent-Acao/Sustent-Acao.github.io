@@ -27,6 +27,32 @@ html {
   scroll-behavior: smooth;
 }
 
+.left-half {
+  margin: auto;
+}
+
+.right-half {
+  margin: auto;
+}
+
+.section-container {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(5, 5, 5);
+  padding: 16rem;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+  margin: auto;
+}
+
+@media only screen and (max-width: 850px) {
+  .section-container {
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
 li {
   list-style: inside;
   color: white;

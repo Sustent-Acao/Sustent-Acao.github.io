@@ -1,0 +1,49 @@
+
+<div
+  class="section-container"
+  style="
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .95)),
+      url('../../../assets/logos/patrocinio.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  "
+>
+  <app-title
+  titulo="APOIADORES"
+  subtitulo="Conheça os apoiadores do nosso projeto!"
+  icon="fa-handshake"
+  ></app-title>
+  <div class="generic-section mt-3rem">
+    <div class="caroussel">
+      <p-galleria
+        [value]="images"
+        [responsiveOptions]="responsiveOptions"
+        [numVisible]="5"
+        [containerStyle]="{ width: '100%', height: '100%' }"
+        [circular]="true"
+        [showItemNavigators]="true"
+        [showThumbnails]="false"
+        [showIndicators]="true"
+        [showItemNavigatorsOnHover]="true"
+        [showIndicatorsOnItem]="false"
+      >
+        <ng-template pTemplate="item" let-item>
+          <span
+            class="bckg"
+            [ngStyle]="{
+              'border-radius': '8px',
+              'background-color': 'rgba(0, 0, 0, 0.5)',
+              'background-image': 'url(' + item.thumbnailImageSrc + ')',
+              'background-size': 'contain'
+            }"
+          >
+          </span>
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center"></div>
+        </ng-template>
+      </p-galleria>
+    </div>
+  </div>
+</div>
