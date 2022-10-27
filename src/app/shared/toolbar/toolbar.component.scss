@@ -112,7 +112,9 @@
 :host {
   @media (max-width: 858px) {
     .logo {
-        scale: .7;
+      img{
+        width: 85%;
+      }
     }
     .center {
       .checkbtn {
