@@ -18,6 +18,7 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { MenuItem, PrimeIcons } from 'primeng/api';
+import {AccordionModule} from 'primeng/accordion';
 import { JogoComponent } from './jogo/jogo.component';
 import { ReceitasComponent } from './receitas/receitas.component';
 import { PatrocinioComponent } from './patrocinio/patrocinio.component';
@@ -42,7 +43,8 @@ import { PatrocinioComponent } from './patrocinio/patrocinio.component';
     FieldsetModule,
     SidebarModule,
     ButtonModule,
-    GalleriaModule
+    GalleriaModule,
+    AccordionModule
   ],
   exports: [
     ToolbarComponent,
